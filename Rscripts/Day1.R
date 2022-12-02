@@ -1,6 +1,6 @@
 # Day 1: calorie counting
 
-calories <- readLines("Day1.txt")
+calories <- readLines("inputs/Day1.txt")
 
 # Create a logical vector identifying blank elements
 empty <- !nzchar(calories)
@@ -24,7 +24,7 @@ sum(total_cal[order(total_cal, decreasing = T)][1:3])
 
 library(tidyverse)
 
-dat <- read_file("Day1.txt")
+dat <- read_file("inputs/Day1.txt")
 
 sums <- strsplit(dat, "\r\n\r")[[1]] %>% 
   map(~ sum(as.numeric(strsplit(.x, "\r\n")[[1]])), na.rm = TRUE) %>% 

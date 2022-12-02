@@ -2,7 +2,7 @@
 
 ## Question 1:
 
-games <- read.table("Day2.txt")
+games <- read.table("inputs/Day2.txt")
 games <- paste(games$V1, games$V2, sep = "")
 
 score <- ifelse(games == "AX", 4, 
